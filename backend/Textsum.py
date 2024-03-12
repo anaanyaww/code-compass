@@ -69,7 +69,7 @@ class all_in_one():
                 finaldata=" ".join(l)
                 return finaldata
         def askai(data):#basically u can ask anything , data should be given in sting format
-                apikey="AIzaSyBLDyo6bqBMcZFRIpNypqmPYE5hadRe4iM"
+                apikey="your_api_key_here"
                 palm.configure(api_key=apikey)
                 modelid='models/text-bison-001'
                 toBeAsked=data#to be given in string 
@@ -90,14 +90,14 @@ class all_in_one():
 
                 return completion.result
         def askai21(content , doubt ):
-             ai21.api_key = 'oxDgMEp78PiFLg3HjY5OmRGvRkPV3dBa'
+             ai21.api_key = 'your_api_key_here'
              a=ai21.Answer.execute(context=content, question=doubt)
              data={}
              data["answer"]=a.answer
              data["valid"]=a.answerInContext
              return data
         def askgem(question):
-                apikey="AIzaSyCHAf6umJfrfEoyd4u_quG6BIKjGOFqud4"
+                apikey="your_api_key_here"
                 genai.configure(api_key=apikey)
                 model = genai.GenerativeModel('gemini-pro')
                 generation_config = {
